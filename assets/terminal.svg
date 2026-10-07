@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="220" viewBox="0 0 960 220" role="img" aria-label="Privacy Robe">
+<rect width="960" height="220" fill="#0f0f0f"/><rect x="1" y="1" width="958" height="218" fill="none" stroke="#3a3a3a"/>
+<circle cx="28" cy="24" r="5" fill="#ff7020"/><circle cx="46" cy="24" r="5" fill="#666"/><circle cx="64" cy="24" r="5" fill="#444"/>
+<text x="26" y="86" fill="#ff7020" font-family="monospace" font-size="17">$ alagael / privacy-robe</text>
+<text x="26" y="137" fill="#ededed" font-family="monospace" font-size="32">Privacy Robe</text>
+<text x="26" y="185" fill="#bdbdbd" font-family="monospace" font-size="15">PUBLIC SOURCE / v0.1.0 / GPL-3.0-or-later</text></svg>

@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.test-build/
+out/
+cache/
+coverage/
+*.tgz
+*.tar.gz
+.env
+.env.*
+*.pem
+*.key

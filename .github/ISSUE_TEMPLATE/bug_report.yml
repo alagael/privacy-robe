@@ -1,0 +1,24 @@
+name: Bug report
+description: Report a reproducible public-source defect.
+body:
+  - type: markdown
+    attributes:
+      value: "Security issues belong at support@alagael.xyz. Do not paste secrets or personal data."
+  - type: input
+    id: version
+    attributes:
+      label: Version and runtime
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction with disposable fixtures
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true

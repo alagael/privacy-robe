@@ -1,0 +1,24 @@
+name: Verify and package
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '22'
+      - name: Install pinned package manager
+        run: npm install --global pnpm@10.17.1
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run build
+      - run: pnpm test
+      - run: pnpm audit --audit-level=high
+      - run: pnpm pack

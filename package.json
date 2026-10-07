@@ -1,0 +1,66 @@
+{
+  "name": "@alagael/privacy-robe",
+  "version": "0.1.0",
+  "description": "Local BIP-39 seed splitting and recovery with threshold SLIP-39 shares. Public source and disposable examples; no hosted service.",
+  "type": "module",
+  "license": "GPL-3.0-or-later",
+  "author": "Alagael contributors",
+  "engines": {
+    "node": ">=22"
+  },
+  "packageManager": "pnpm@10.17.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alagael/privacy-robe.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alagael/privacy-robe/issues"
+  },
+  "homepage": "https://github.com/alagael/privacy-robe#readme",
+  "files": [
+    "dist",
+    "src",
+    "vendor",
+    "abi",
+    "deployments",
+    "examples",
+    "assets",
+    "build.mjs",
+    "scripts",
+    "test",
+    "lib",
+    "foundry.toml",
+    "pnpm-lock.yaml",
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.md",
+    "README.md",
+    "SECURITY.md",
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
+    "RELEASING.md",
+    "CODE_OF_CONDUCT.md"
+  ],
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node build.mjs test",
+    "prepack": "pnpm run build"
+  },
+  "keywords": [
+    "alagael",
+    "ethereum",
+    "privacy",
+    "inheritance"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "devDependencies": {
+    "esbuild": "0.25.12"
+  }
+}
